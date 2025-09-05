@@ -19,7 +19,7 @@
 
 body {
     background-size: cover;
-    background-image: url(ASSETS/bodyBG.png);
+    background-image: url('ASSETS/bodyBG.jpg');
     background-repeat: no-repeat;
 }
 
@@ -89,3 +89,4 @@ body {
     color:#9a031e;
     transition: 1500ms;
 }
+
