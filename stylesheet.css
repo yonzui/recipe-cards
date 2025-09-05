@@ -1,11 +1,20 @@
+/* FONTS */
+
 @font-face {
-    font-family: rainyhearts;
-    src: url(FONTS\Minecraft.ttf);
+    font-family: "rainyhearts";
+    src: url('FONTS/Minecraft.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: pixel;
-    src: url(FONTS\retro.ttf);
+    font-family: "pixel";
+    src: url('FONTS/retro.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: "cafe";
+    src: url('FONTS/cafe.ttf') format('truetype');
+
 }
 
 body {
@@ -13,6 +22,8 @@ body {
     background-image: url(ASSETS/bodyBG.png);
     background-repeat: no-repeat;
 }
+
+/* INTRO BAR */
 
 .intro h1 {
     text-align: center;
@@ -23,5 +34,58 @@ body {
     border-width:9px;
     border-image: url("ASSETS/crackerBorder.png") 9 fill round; 
     filter: drop-shadow(0px 2px 2px rgb(0, 0, 0));
+    margin: 5% 15% 2%;
+    font-family: "cafe";
+    letter-spacing: 1px;
+}
 
+
+
+/* RECIPES */
+
+.allRecipes {
+    margin: 0 10% 0;
+    display: flex;
+
+}
+
+.recipe1, .recipe2, .recipe3 {
+    margin: 0 2% 0;
+    padding: 1%;
+    flex: .33%;
+    border-style: solid;
+    border-width:9px;
+    border-image: url("ASSETS/crackerBorder.png") 9 fill round; 
+    filter: drop-shadow(0px 2px 2px rgb(0, 0, 0));    
+    font-family: "cafe";
+    text-align: center;
+    color:rgb(218, 192, 153);
+}
+
+    .recipe1 p, .recipe2 p, .recipe3 p {
+        font-family: "rainyhearts";
+        font-size: 1.2em;
+
+    }
+
+
+.cardBack {
+    color:transparent;
+}
+
+
+/* HOVER EFFECTS */
+
+.recipe1:hover, .recipe2:hover, .recipe3:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 10px 10px black);
+    transition: 1500ms;
+    transform: scale(1);
+    color:#9a031e;
+    }
+
+
+.cardBack:hover {
+    color:#9a031e;
+    transition: 1500ms;
 }
